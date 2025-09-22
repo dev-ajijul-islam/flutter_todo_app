@@ -28,7 +28,8 @@ class MyApp extends StatelessWidget {
             minimumSize: Size(120, 50),
             shape: RoundedSuperellipseBorder(borderRadius: BorderRadius.circular(20))
           )
-        )
+        ),
+        primaryColor: Colors.deepPurple
       ),
       home: WelcomeScreen(),
     );
