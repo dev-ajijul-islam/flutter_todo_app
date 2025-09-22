@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:practice_flutter/screens/home_screen.dart';
 import 'package:practice_flutter/screens/welcome_screen.dart';
 
-main(){
+main() {
   runApp(MyApp());
 }
 
@@ -13,11 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       initialRoute: "/welcome",
       routes: {
-        "/home" : (context) => HomeScreen(),
-        "/welcome" : (context) => WelcomeScreen()
+        "/home": (context) => HomeScreen(),
+        "/welcome": (context) => WelcomeScreen(),
       },
 
       theme: ThemeData(
@@ -26,10 +24,12 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.deepPurple,
             foregroundColor: Colors.white,
             minimumSize: Size(120, 50),
-            shape: RoundedSuperellipseBorder(borderRadius: BorderRadius.circular(20))
-          )
+            shape: RoundedSuperellipseBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+          ),
         ),
-        primaryColor: Colors.deepPurple
+        primaryColor: Colors.deepPurple,
       ),
       home: WelcomeScreen(),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice_flutter/widgets/banner.dart';
 import 'package:practice_flutter/widgets/top_bar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,7 +12,9 @@ class HomeScreen extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(20),
           child: Column(children: [
-              TopBar()
+              TopBar(),
+              SizedBox(height: 35,),
+              BannerSection()
           ]),
         ),
       ),
