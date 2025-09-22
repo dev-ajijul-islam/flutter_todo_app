@@ -27,7 +27,7 @@ class TopBar extends StatelessWidget {
                 ),
                 Text(
                   "MD. Ajijul Islam",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ],
             ),

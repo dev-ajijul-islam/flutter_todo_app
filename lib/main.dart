@@ -30,6 +30,11 @@ class MyApp extends StatelessWidget {
           ),
         ),
         primaryColor: Colors.deepPurple,
+
+        textTheme: TextTheme(
+          bodyLarge: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),
+          bodyMedium:  TextStyle(fontSize: 20)
+        )
       ),
       home: WelcomeScreen(),
     );

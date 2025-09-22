@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice_flutter/widgets/banner.dart';
+import 'package:practice_flutter/widgets/in_progress.dart';
 import 'package:practice_flutter/widgets/top_bar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,7 +15,9 @@ class HomeScreen extends StatelessWidget {
           child: Column(children: [
               TopBar(),
               SizedBox(height: 35,),
-              BannerSection()
+              BannerSection(),
+              SizedBox(height: 35,),
+              InProgress()
           ]),
         ),
       ),
